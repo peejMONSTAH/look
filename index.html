@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Miss You</title>
+    <style>
+        body {
+            background-color: #fdf3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff4f81;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .arrow {
+            margin-top: 20px;
+            font-size: 3rem;
+            color: #ff4f81;
+            animation: bounce 2s infinite;
+        }
+
+        .image-container {
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out 2s forwards;
+            opacity: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>I MISS YOU BABY :((</h1>
+    <div class="arrow">⬇</div>
+    <div class="image-container">
+        <!-- Replace the following line with your image -->
+        <img src="img.jpg" alt="Romantic Picture">
+    </div>
+</body>
+</html>
